@@ -1,0 +1,13 @@
+.bar-container {
+    height: 40px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.bar {
+    background: green;
+    height: 100%;
+    width: 0;
+}

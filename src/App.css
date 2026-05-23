@@ -1,0 +1,94 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 48px;
+    font-weight: bold;
+    aspect-ratio: 1 / 1;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.bar-container {
+    display: flex;
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.bar {
+    width: 0;
+    height: 40px;
+    background: green;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 80%;
+}
+
+.right {
+    width: 20%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.left-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
