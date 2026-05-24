@@ -1,8 +1,8 @@
-import { Trello } from "./components/Trello";
+import { OverlappingCircles } from "./components/OverlappingCircles";
 import { Children, cloneElement, useState } from "react";
 
 function App() {
-  return <Trello />;
+  return <OverlappingCircles />;
 }
 
 function Accordion({ children }) {
