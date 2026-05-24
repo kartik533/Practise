@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 const INTERVAL = 3000;
 const MAX = 3;
@@ -10,9 +10,15 @@ export function ProgressBar() {
     <div>
       <div>
         {Array(count)
-          .fill('_')
+          .fill("_")
           .map((_, ind) => {
-            return <Bar key={{ ind }} isEmpty={ind >= MAX + filled} onCompleted={() => setFilled((prev) => prev + 1)} />;
+            return (
+              <Bar
+                key={{ ind }}
+                isEmpty={ind >= MAX + filled}
+                onCompleted={() => setFilled((prev) => prev + 1)}
+              />
+            );
           })}
       </div>
       <button onClick={() => setCount((prev) => prev + 1)}>Click</button>
@@ -35,7 +41,7 @@ function Bar({ isEmpty, onCompleted }) {
         return;
       }
       width += 1;
-      bar.style.width = width + '%';
+      bar.style.width = width + "%";
     }, INTERVAL / 100);
 
     return () => clearInterval(timer);

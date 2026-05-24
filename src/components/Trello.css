@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  gap: 40px;
+}
+
+.column {
+  height: auto;
+  width: 400px;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.column-item {
+  min-height: 40px;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 4px;
+}

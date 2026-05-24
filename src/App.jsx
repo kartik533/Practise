@@ -1,15 +1,8 @@
-import './components/Accordion.css';
-import { Children, cloneElement, useState } from 'react';
+import { Trello } from "./components/Trello";
+import { Children, cloneElement, useState } from "react";
 
 function App() {
-  return (
-    <Accordion>
-      <AccordionItem title="Item1">I am Item 1</AccordionItem>
-      <AccordionItem title="Item2">I am Item 2</AccordionItem>
-      <AccordionItem title="Item3">I am Item 3</AccordionItem>
-      <AccordionItem title="Item4">I am Item 4</AccordionItem>
-    </Accordion>
-  );
+  return <Trello />;
 }
 
 function Accordion({ children }) {
